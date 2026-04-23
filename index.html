@@ -107,7 +107,7 @@
     .btn:active  { transform: scale(.97); }
     .btn:disabled { opacity: .5; cursor: not-allowed; }
     .btn-primary { background: #8B5CF6; color: #fff; }
-    .btn-warning { background: #F59E0B; color: #fff; }
+    .btn-success { background: #F59E0B; color: #fff; }
     .btn-danger  { background: #EF4444; color: #fff; }
     .btn-ghost   { background: #f3f4f6; color: #374151; }
     .btn-sm      { padding: .35rem .75rem; font-size: .8rem; }
@@ -132,7 +132,7 @@
       animation: slideIn .25s ease;
       max-width: 320px;
     }
-    .toast.success { background: #F59E0B; }
+    .toast.success { background: #10b981; }
     .toast.error   { background: #EF4444; }
     @keyframes slideIn {
       from { transform: translateX(110%); opacity: 0; }
@@ -497,7 +497,7 @@
           <td>${formatDate(c.created_at)}</td>
           <td>
             <div class="actions">
-              <button class="btn btn-warning btn-sm" onclick="openEdit(${c.id})">Edit</button>
+              <button class="btn btn-success btn-sm" onclick="openEdit(${c.id})">Edit</button>
               <button class="btn btn-danger  btn-sm" onclick="openDelete(${c.id}, '${esc(c.name)}')">Delete</button>
             </div>
           </td>
